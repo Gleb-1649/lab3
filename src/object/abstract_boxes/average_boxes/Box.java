@@ -9,15 +9,15 @@ public class Box extends AverageBoxes {
 
     @Override
     public void decay() {
-        System.out.println("The contents of the box are decaying...");
+        System.out.println("содержимое ящика разлагается...");
     }
 
     public void decayQuickly() {
-        System.out.println("The box is decaying quickly!");
+        System.out.println("ящик быстро разваливается!");
     }
 
     @Override
     public void openBox() {
-        System.out.println("Opening the box...");
+        System.out.println("открывает ящик...");
     }
 }

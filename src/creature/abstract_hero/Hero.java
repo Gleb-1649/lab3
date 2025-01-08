@@ -20,31 +20,31 @@ public class Hero extends AbstractHero {
 
     @Override
     public void defend() {
-        System.out.println(getName() + " is defending...");
+        System.out.println(getName() + " защаищается...");
     }
 
     @Override
     public void fight() {
-        System.out.println(getName() + " is fighting...");
+        System.out.println(getName() + " борется...");
     }
 
     @Override
     public void kill() {
-        System.out.println(getName() + " is killing...");
+        System.out.println(getName() + " убивает...");
     }
 
     @Override
     public void die() {
-        System.out.println(getName() + " has died.");
+        System.out.println(getName() + " умер");
     }
 
     @Override
     public void eat() {
-        System.out.println(getName() + " is eating...");
+        System.out.println(getName() + " ест...");
     }
 
     @Override
     public void drink() {
-        System.out.println(getName() + " is drinking...");
+        System.out.println(getName() + " пьет...");
     }
 }

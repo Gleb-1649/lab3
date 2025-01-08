@@ -10,16 +10,16 @@ public class ClashArena extends Arena {
 
     @Override
     public void startBattle() {
-        System.out.println("Battle starts in " + getPlaceName());
+        System.out.println("Битва начинается в " + getPlaceName());
     }
 
     @Override
     public void exist() {
-        System.out.println(getPlaceName() + " exists in " + getWorld());
+        System.out.println(getPlaceName() + " существвует в " + getWorld());
     }
 
     @Override
     public void visit() {
-        System.out.println("Visiting the Clash Arena...");
+        System.out.println("Визит the Clash Arena...");
     }
 }

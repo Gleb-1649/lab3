@@ -40,16 +40,16 @@ public abstract class Boxes implements Object {
 
     @Override
     public void lie() {
-        System.out.println("The box is lying on the ground.");
+        System.out.println("ящик лежит на земле.");
     }
 
     @Override
     public void take() {
-        System.out.println("The box is taken.");
+        System.out.println("ящик подобран");
     }
 
     @Override
     public void overlook() {
-        System.out.println("Looking over the box.");
+        System.out.println("осмотр ящика");
     }
 }

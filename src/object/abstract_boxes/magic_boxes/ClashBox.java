@@ -9,16 +9,16 @@ class ClashBox extends MagicBoxes {
 
     @Override
     public void teleport() {
-        System.out.println("The ClashBox teleports the player to a battle arena...");
+        System.out.println("The ClashBox телепортирует героя на арену...");
     }
 
     @Override
     public void explode() {
-        System.out.println("The ClashBox explodes with confetti!");
+        System.out.println("The ClashBox взрывается с конфетти!");
     }
 
     @Override
     public void openBox() {
-        System.out.println("Opening the ClashBox to reveal legendary items...");
+        System.out.println("Открытие the ClashBox для нахождения легендарных предметов...");
     }
 }

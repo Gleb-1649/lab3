@@ -9,26 +9,26 @@ public class Hut extends WoodHouse {
     }
 
     public void laudCreak() {
-        System.out.println("The hut creaks loudly...");
+        System.out.println("The hut громко скрипит...");
     }
 
     @Override
     public void creak() {
-        System.out.println("The hut is creaking...");
+        System.out.println("The hut скрипит...");
     }
 
     @Override
     public void fire() {
-        System.out.println("The hut is on fire!");
+        System.out.println("The hut вохвачена огнем!");
     }
 
     @Override
     public void exist() {
-        System.out.println(getPlaceName() + " exists in " + getWorld());
+        System.out.println(getPlaceName() + " существует в" + getWorld());
     }
 
     @Override
     public void visit() {
-        System.out.println("Visiting the hut...");
+        System.out.println("Визит the hut...");
     }
 }

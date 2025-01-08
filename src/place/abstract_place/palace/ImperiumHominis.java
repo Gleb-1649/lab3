@@ -9,21 +9,21 @@ public class ImperiumHominis extends Palace {
     }
 
     public void wellSecure() {
-        System.out.println(getPlaceName() + " is well-secured.");
+        System.out.println(getPlaceName() + " хорошо охраняем.");
     }
 
     @Override
     public void secure() {
-        System.out.println(getPlaceName() + " is being secured...");
+        System.out.println(getPlaceName() + " обеспечивается охрана...");
     }
 
     @Override
     public void exist() {
-        System.out.println(getPlaceName() + " exists in " + getWorld());
+        System.out.println(getPlaceName() + "существует в " + getWorld());
     }
 
     @Override
     public void visit() {
-        System.out.println("Visiting " + getPlaceName());
+        System.out.println("Визит " + getPlaceName());
     }
 }

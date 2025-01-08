@@ -9,16 +9,16 @@ class WarhummerBox extends MagicBoxes {
 
     @Override
     public void teleport() {
-        System.out.println("The WarhummerBox teleports you to a war zone...");
+        System.out.println("The WarhummerBox телепортирует вас в зону войны...");
     }
 
     @Override
     public void explode() {
-        System.out.println("The WarhummerBox explodes with a loud bang!");
+        System.out.println("The WarhummerBox взрывается с громким взрывом!");
     }
 
     @Override
     public void openBox() {
-        System.out.println("Opening the WarhummerBox to reveal ancient weapons...");
+        System.out.println("Открытие the WarhummerBox для обнаружения античных оружий...");
     }
 }

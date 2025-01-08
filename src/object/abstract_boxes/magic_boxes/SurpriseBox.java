@@ -21,16 +21,16 @@ class SurpriseBox extends MagicBoxes {
 
     @Override
     public void teleport() {
-        System.out.println("The SurpriseBox teleports you to an unknown location...");
+        System.out.println("The SurpriseBox телепортирует вас на неизвестную локацию...");
     }
 
     @Override
     public void explode() {
-        System.out.println("The SurpriseBox explodes, revealing a surprise reward: " + specialReward);
+        System.out.println("The SurpriseBox взрывается, открывая неожиданную награду: " + specialReward);
     }
 
     @Override
     public void openBox() {
-        System.out.println("Opening the SurpriseBox... What could it be?");
+        System.out.println("Открытие  the SurpriseBox... Что это может быть?");
     }
 }
