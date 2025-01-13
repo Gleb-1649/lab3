@@ -1,6 +1,8 @@
 package object.box;
 import object.Object;
 
+import java.util.Objects;
+
 public abstract class Boxes implements Object {
     private String type;
     private double weight;
@@ -51,5 +53,29 @@ public abstract class Boxes implements Object {
     @Override
     public void overlook() {
         System.out.println("осмотр ящика");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Boxes boxes = (Boxes) o;
+        return Double.compare(boxes.weight, weight) == 0 &&
+                Objects.equals(type, boxes.type) &&
+                Objects.equals(material, boxes.material);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, weight, material);
+    }
+
+    @Override
+    public String toString() {
+        return "Boxes{" +
+                "type='" + type + '\'' +
+                ", weight=" + weight +
+                ", material='" + material + '\'' +
+                '}';
     }
 }
