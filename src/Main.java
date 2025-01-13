@@ -1,12 +1,13 @@
-import creature.abstract_enemy.Enemy;
-import creature.abstract_hero.Hero;
+import creature.enemy.Enemy;
+import creature.hero.Hero;
+import exceptions.HutBurnedException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import place.abstract_place.arena.ClashArena;
-import place.abstract_place.palace.ImperiumHominis;
-import place.abstract_place.wood_house.Hut;
+import place.arena.ClashArena;
+import place.palace.ImperiumHominis;
+import place.wood_house.Hut;
 import place.enumeration.WorldTypeEnum;
-import object.abstract_boxes.average_boxes.Box;
+import object.average_boxes.Box;
 
 
 public class Main {
@@ -18,6 +19,14 @@ public class Main {
 
         // Создание мест
         Hut hut = new Hut("Хижина Из Ящиков", WorldTypeEnum.EARTH, "Легендарная", false);
+        try {
+            hut.visit();
+            hut.fire();
+            hut.visit();
+        } catch (HutBurnedException e) {
+            System.err.println(e.getMessage());
+        }
+
 
         // Создание ящиков
         Box macaroniBox = new Box();
